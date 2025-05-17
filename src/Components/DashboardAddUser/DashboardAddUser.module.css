@@ -1,0 +1,116 @@
+@import url('../Style/Variables/Variables.module.css');
+
+.input input,
+.input select {
+    background-color: #b6b6b634 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.input input:focus,
+.input select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    background-color: transparent;
+}
+
+.input  input::placeholder {
+    color: rgba(0, 0, 0, 0.678);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.input  input:focus::placeholder {
+    color: transparent;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+
+.input  input::-webkit-outer-spin-button,
+.input  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input input:-webkit-autofill,
+.input input:-webkit-autofill:hover,
+.input input:-webkit-autofill:focus,
+.input input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fffbfb !important;
+}
+
+
+.title {
+    text-transform: capitalize;
+    font-family: var(--regularWhisper);
+    margin: 20px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #0da487;
+    z-index: -1;
+}
+
+.input {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.input label {
+    font-family: var(--mediumFredoka);
+    font-size: 16px;
+}
+
+.input input,
+.input select {
+    width: 100%;
+}
+
+.btns {
+    margin-top: 80px;
+}
+
+.backBtn {
+    border: 1px solid #0da487 !important;
+    color: #0da487 !important;
+    text-transform: capitalize;
+    padding: 9px 22px !important;
+}
+
+.backBtn:hover {
+    background-color: #0da487 !important;
+    color: #fff !important;
+}
+
+.saveBtn {
+    background-color: #0da487 !important;
+    border: 1px solid #0da487 !important;
+    font-family: var(--mediumFredoka) !important;
+    text-transform: capitalize;
+    padding: 9px 22px !important;
+}
+
+.saveBtn:hover {
+    background-color: #fff !important;
+    color: #0da487 !important;
+    border: 1px solid #0da487 !important;
+}

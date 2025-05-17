@@ -1,0 +1,210 @@
+/* General Styles */
+:root {
+    --mainColor: #198754;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Background Title Section */
+  .backgroundTitle {
+    background-image: url('../../images/backg-7.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .backgroundTitle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .backgroundTitle h3 {
+    color: #fff;
+    font-size: 64px;
+    text-transform: capitalize;
+  }
+  
+  @media (max-width: 768px) {
+    .backgroundTitle {
+      height: 30vh;
+      margin-bottom: 60px;
+    }
+  
+    .backgroundTitle h3 {
+      font-size: 32px;
+    }
+  }
+  
+  /* Bag Section */
+  .bag {
+    background-color: white;
+  }
+  
+  /* Intro Background */
+  /* .introBg, .introBgg {
+    background-image: url('../../images/cover4.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 60px;
+  } */
+  
+  @media (max-width: 768px) {
+    .introBg, .introBgg {
+      padding: 60px 30px;
+      background-position: center;
+    }
+  }
+  
+  /* Input Fields */
+  .inputField, .inputFieldd {
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+  }
+  
+  .inputField {
+    height: 45px;
+    padding: 0 10px 0 45px;
+  }
+  
+  .inputFieldd {
+    padding: 10px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #000000;
+  }
+  
+  /* Header */
+  .header {
+    font-weight: 400;
+  }
+  
+  /* Icon Box */
+  .iconBoox {
+    position: relative;
+    top: -34px;
+    left: 14px;
+    color: var(--mainColor);
+  }
+  
+  /* Head Section */
+  .head {
+    position: relative;
+    background: #f8f8f8;
+    width: 90%;
+    max-width: 500px;
+    padding: 1em;
+    margin: 1em auto;
+    border: 3px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .head .headTitle::before, .head .headTitle::after {
+    background-color: var(--mainColor);
+  }
+  
+  .headTitle {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 160px;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .headTitle::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 5px;
+  }
+  
+  .headTitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 0.25em;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px 15px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .features .cardd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .features .card {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgba(238, 230, 230, 0.738);
+    flex: 1 1 calc(50% - 20px);
+  }
+  
+  .iconBox {
+    background-color: var(--mainColor);
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  
+  .features .card h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  
+  .features .card p {
+    color: #687188;
+    line-height: 1.75;
+  }
+  
+  @media (max-width: 768px) {
+    .features .card {
+      flex: 1 1 100%;
+    }
+  
+    .inputFieldd {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,10 @@
+@import url('../Variables/Variables.module.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--lightFont);
+}
+

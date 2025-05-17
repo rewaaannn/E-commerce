@@ -1,0 +1,65 @@
+@import url('../Base/Font.module.css');
+
+:root {
+
+    --mainColor: #198754;
+    --blackColor: black;
+    --darkColor: rgb(33 37 41);
+    --darkBlueColor: rgb(22 28 45);
+    --whiteColor: white;
+    --paragraphColor: lightgray;
+    --paragraph: rgb(148 163 184/ 1);
+    --paragraphBackground: #b6b6b69d;
+    --extraBoldFont: montserrat-extra-bold;
+    --boldFont: montserrat-bold;
+    --semiBoldFont: montserrat-semi-bold;
+    --blackFont: montserrat-black;
+    --mediumFont: montserrat-medium;
+    --regularFont: montserrat-regular;
+    --lightFont: montserrat-light;
+    --regularWhisper: whisper-regular;
+    --semiBoldFredoka: fredoka-semi-bold;
+    --boldFredoka: fredoka-bold;
+    --mediumFredoka: fredoka-medium;
+    --regularFredoka: fredoka-regular;
+    --lightFredoka: fredoka-light;
+    --boldManjari: manjari-bold;
+    --jaro: jaro;
+    --jaroSmall: jaro-small;
+    --jaroRegular: jaro-regular;
+    --jaroMedium: jaro-medium;
+    --jaroBold: jaro-bold;
+    --paddingSec: 120px 60px;
+}
+
+/* body {
+    background-color: rgb(243 244 246) !important;
+    background: #0b141d !important;
+    background: #0e0e0eab !important;
+    background-color: transparent !important;
+} */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: hsla(0, 0%, 100%, 0.164);  */
+    background-color: #00776f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* background: hsla(0, 0%, 100%, 0.315);  */
+    background-color: #00423e7a;
+}
+
+::selection {
+    background-color: rgb(15 23 42);
+    color: rgb(255 255 255);
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}

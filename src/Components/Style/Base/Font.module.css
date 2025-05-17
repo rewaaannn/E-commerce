@@ -1,0 +1,103 @@
+/* Montserrat Font */
+@font-face {
+    font-family: montserrat-extra-bold;
+    src: url("../Fonts/static/Montserrat-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url("../Fonts/static/Montserrat-Bold.ttf")
+}
+
+@font-face {
+    font-family: montserrat-semi-bold;
+    src: url("../Fonts/static/Montserrat-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: montserrat-black;
+    src: url("../Fonts/static/Montserrat-Black.ttf")
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url("../Fonts/static/Montserrat-Medium.ttf")
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url("../Fonts/static/Montserrat-Regular.ttf")
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url("../Fonts/static/Montserrat-Light.ttf")
+}
+
+/* Whisper Font */
+
+@font-face {
+    font-family: whisper-regular;
+    src: url("../Fonts/Whisper/Whisper-Regular.ttf");
+}
+
+/* Fredoka Font */
+
+@font-face {
+    font-family: fredoka-semi-bold;
+    src: url("../Fonts/Fredoka/static/Fredoka-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: fredoka-bold;
+    src: url("../Fonts/Fredoka/static/Fredoka-Bold.ttf");
+}
+
+@font-face {
+    font-family: fredoka-medium;
+    src: url("../Fonts/Fredoka/static/Fredoka-Medium.ttf");
+}
+
+@font-face {
+    font-family: fredoka-regular;
+    src: url("../Fonts/Fredoka/static/Fredoka-Regular.ttf");
+}
+
+@font-face {
+    font-family: fredoka-light;
+    src: url("../Fonts/Fredoka/static/Fredoka-Light.ttf");
+}
+
+/* Manjari Font */
+
+@font-face {
+    font-family: manjari-bold;
+    src: url("../Fonts/Manjari/Manjari-Bold.ttf");
+}
+
+/* jaro Font */
+
+@font-face {
+    font-family: jaro-small;
+    src: url("../Fonts/Jaro/static/Jaro_9pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: jaro-regular;
+    src: url("../Fonts/Jaro/static/Jaro_24pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: jaro-medium;
+    src: url("../Fonts/Jaro/static/Jaro_36pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: jaro-bold;
+    src: url("../Fonts/Jaro/static/Jaro_60pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: jaro;
+    src: url("../Fonts/Jaro/static/Jaro-Regular.ttf");
+}

@@ -1,0 +1,238 @@
+@import url('../Style/Variables/Variables.module.css');
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.title::before {
+content: "";
+    position: absolute;
+    left: -17px;
+    top: 10px;
+    bottom: 0;
+    width: 20px;
+    height: 10px;
+    background-color: #dc2626;
+    border-radius: 0 5px 5px 0;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826;
+}
+
+.headCol {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: var(--regularFredoka);
+    opacity: .6;
+}
+
+.tableRowInvoiceNum {
+    color: var(--darkBlueColor) !important;
+    font-family: var(--mediumFredoka);
+}
+
+.tableRowDate {
+    color: var(--paragraph) !important;
+    text-transform: capitalize;
+    font-family: var(--regularFredoka);
+}
+
+.status {
+    text-transform: capitalize;
+    font-family: var(--mediumFredoka);
+    color: var(--paragraph);
+}
+
+table td {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+table thead th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+table tbody td {
+    vertical-align: middle;
+}
+
+.tableRowDelivered {
+    color: var(--mainColor) !important;
+}
+
+.tableRowCanceled {
+    color: red !important;
+}
+
+.tableRowProcessing {
+    color: var(--paragraph) !important;
+}
+
+.tableSalary {
+    color: var(--paragraph) !important;
+}
+
+.tableSalary span {
+    color: rgba(0, 0, 0, 0.582);
+    font-family: var(--mediumFredoka);
+}
+
+.tableRowViewBtn a {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--mainColor) !important;
+    font-family: var(--mediumFredoka) !important;
+    position: relative;
+}
+
+.tableRowViewBtn a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--mainColor);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.tableRowViewBtn a:hover::before {
+    width: 100%;
+}
+
+.tableRowViewBtn a i {
+    font-size: 12px;
+}
+
+.description {
+    color: var(--paragraph);
+    margin-bottom: 0;
+}
+
+.userName {
+    font-size: 18px;
+    font-family: var(--blackFont);
+}
+
+.userName2 {
+    font-size: 18px;
+    font-family: var(--blackFredoka);
+}
+
+.location,
+.phoneNumber {
+    color: var(--paragraph);
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.location i,
+.phoneNumber i {
+    color: var(--mainColor);
+    margin-right: 5px;
+}
+
+.deleteVisa {
+    color: red;
+    background-color: #dc26260d;
+    text-align: center;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.deleteVisa i {
+    font-size: 16px;
+}
+
+.deleteVisa:hover {
+    color: white;
+    background-color: #dc2626;
+}
+
+.addVisa {
+    position: absolute;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: gray;
+    opacity: .5;
+    z-index: 100;
+    height: 100%;
+}
+
+.invoiceDetails {
+    font-family: var(--regularFredoka);
+    text-transform: capitalize;
+    color: rgb(22 28 45);
+    width: 95px;
+}
+
+.invoiceInfo {
+    color: var(--paragraph);
+    line-height: 1.7;
+}
+
+.customerService {
+    text-transform: capitalize;
+    color: var(--paragraph);
+}
+
+.invoiceFooter a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--regularFredoka);
+    font-size: 15px;
+}
+
+.uploadPhoto {
+    position: relative;
+    border: 1px dashed var(--paragraph);
+}
+
+.uploadPhoto input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.uploadPhoto:has(input:focus) {
+    border-color: var(--mainColor);
+}
+
+.image img {
+    height: 64px;
+    width: 64px;
+}

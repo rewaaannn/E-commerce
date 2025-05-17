@@ -1,0 +1,215 @@
+@import url('../Style/Variables/Variables.module.css');
+
+.light {
+    /* background-color: #fff !important; */
+    background: #f9f9f6 !important;
+    color: #000000 !important;
+}
+
+.dark {
+    background: #1c2128 !important;
+    color: #fff;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    /* width: 3.5em;
+    height: 2em; */
+    width: 40px;
+    height: 23px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch .inputDarkMode {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2e2e2e;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: rgb(40, 167, 40);
+    transition: .4s;
+  }
+  
+  .inputDarkMode:checked + .slider {
+    background-color: #000;
+  }
+  
+  .input:focus + .slider {
+    box-shadow: 0 0 1px #000;
+  }
+  
+  .inputDarkMode:checked + .slider:before {
+    transform: translateX(1em);
+    -webkit-transform: translateX(1em);
+    -moz-transform: translateX(1em);
+    -ms-transform: translateX(1em);
+    -o-transform: translateX(1em);
+}
+
+.header {
+    /* background-color: rgba(73, 73, 73, 0.555); */
+    background-color: transparent;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.headerBg {
+    /* background-color: rgb(33 37 41); */
+    background-color: var(--mainColor);
+    /* background-color: var(--whiteColor); */
+}
+
+.link {
+    position: relative;
+    text-align: center;
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    bottom: 5px;
+    height: 2px;
+    width: 0;
+    /* background-color: #198754; */
+    background-color: var(--whiteColor);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.link:hover:before {
+    width: 75%;
+}
+
+.profile {
+    cursor: pointer;
+    border: 1px solid var(--mainColor);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.profileBg {
+    border: 1px solid #1c2128 !important;
+}
+
+.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    width: 200px;
+    background-color: #fff;
+    top: 50px;
+    left: -150px !important;
+    border: none !important;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826;
+    /* display: none; */
+}
+
+.ul.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.ul.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.ul li {
+    padding: 12px 15px;
+}
+
+.ul li i {
+    margin-right: 8px;
+}
+
+.ul li:last-child  {
+    border-top: 1px dashed rgba(0, 0, 0, 0.356);
+    /* margin: 10px 0; */
+}
+
+.points {
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    padding: 12px 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkProfile {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: var(--mediumFredoka);
+    font-size: 16px;
+    color: #1F2937;
+    border: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.linkProfile:hover {
+    color: var(--mainColor) !important;
+}

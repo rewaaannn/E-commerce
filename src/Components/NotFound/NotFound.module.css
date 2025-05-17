@@ -1,0 +1,13 @@
+@import url('../Style/Base/Base.module.css');
+
+.error {
+    font-family: var(--jaro);
+    text-align: center;
+    padding: 5% 0;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

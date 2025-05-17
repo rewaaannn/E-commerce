@@ -1,0 +1,102 @@
+@import url('../Style/Variables/Variables.module.css');
+
+.title {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    top: 10px;
+    bottom: 0;
+    width: 20px;
+    height: 10px;
+    background-color: #dc2626;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826;
+}
+
+table td {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+table thead th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+table tbody td {
+    vertical-align: middle;
+}
+
+.description {
+    color: var(--paragraph);
+    margin-bottom: 0;
+}
+
+.notifications:not(.notification:last-child) {
+    border-width: 10px;
+    border-style: solid;
+    border-bottom: black;
+}
+
+.notifications .notification {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.219) transparent;
+}
+
+.notifications .notification:last-child {
+    border: none;
+}
+
+.userName {
+    font-size: 16px;
+    font-family: var(--mediumFont);
+}
+
+.userName::first-letter {
+    text-transform: uppercase;
+}
+
+.location,
+.phoneNumber {
+    color: var(--paragraph);
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.location i,
+.phoneNumber i {
+    color: var(--darkColor);
+    margin-right: 5px;
+}
+
+.iconInput i {
+    margin-left: 10px;
+}
+
+.text label {
+    text-transform: capitalize;
+    color: var(--paragraph);
+    font-family: var(--regularFredoka);
+    font-size: 17px;
+}
+
+.right input {
+    accent-color: var(--mainColor);
+}
